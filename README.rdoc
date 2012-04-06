@@ -14,7 +14,7 @@ Since it uses Continuations and +callcc+, it will only run on MRI. Sorry, no JRu
 
 This plugin for Rails allows you to declare actions in your controllers that look like this:
 
-    def_continued :my_method
+    def_continued :my_method do
       render :partial => 'form_part_1'
       continue
   
